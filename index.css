@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Josefin Sans;
+}
+button {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(0, 0%,10%);
+    color: hsl(170, 80%, 75%);
+    filter: brightness(1.25);
+    cursor: pointer;
+    align-content: center;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.55rem;
+    padding: 25px;
+}
+
+.calculator {
+    background-color: hsla(0, 0%, 0%, 0.947);
+    border-radius: 15px;
+    overflow: hidden;
+}
+#display {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: hsla(0, 0%, 10%);
+    height: 15vh;
+    text-align:justify;
+    font-size:2rem;
+    color: hsl(0, 0%, 100%);
+}
+.operator:first-child {
+    background-color: hsl(238, 91%, 17%);
+}
+.operator {
+    background-color: hsla(239, 78%, 18%, 0.575);
+    font-style: italic;
+}
+
+
+.operator:first-child:hover {
+    background-color: hsl(238, 91%, 10%);
+}
+
+.operator:hover {
+    background-color: hsla(239, 78%, 18%, 0.175);
+
+}
+
+.keys button:hover {
+    background-color: hsla(0, 0%,0%,0.2);
+}
